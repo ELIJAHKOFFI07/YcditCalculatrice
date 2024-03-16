@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="500.0" stylesheets="@calculette.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="koffiamonnindanielelie.diahouyapocharlesemmanuel.ycditcalculatrice.CalculatriceController">
+   <children>
+      <Label id="ecran" fx:id="ecran" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="-6.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="508.0" styleClass="ecran" stylesheets="@calculette.css" text="0" textAlignment="RIGHT" textFill="#909090">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <HBox id="hbox" alignment="CENTER" layoutX="-3.0" layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="500.0" spacing="40.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="297.0" prefWidth="109.0" spacing="25.0">
+               <children>
+                  <Button id="digit" fx:id="un" mnemonicParsing="false" onAction="#un" text="1">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="digit" fx:id="quatre" mnemonicParsing="false" onAction="#quatre" text="4">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="digit" fx:id="sept" mnemonicParsing="false" onAction="#sept" text="7">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="function" fx:id="exit" mnemonicParsing="false" onAction="#exit" text="EXIT">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="253.0" prefWidth="49.0" spacing="25.0">
+               <children>
+                  <Button id="digit" fx:id="deux" mnemonicParsing="false" onAction="#deux" text="2">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="digit" fx:id="cinq" mnemonicParsing="false" onAction="#cinq" text="5">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="digit" fx:id="huit" mnemonicParsing="false" onAction="#huit" text="8">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="digit" fx:id="zero" mnemonicParsing="false" onAction="#zero" text="0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+               <children>
+                  <Button id="digit" fx:id="trois" mnemonicParsing="false" onAction="#trois" prefHeight="63.0" prefWidth="49.0" text="3">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="digit" fx:id="six" mnemonicParsing="false" onAction="#six" text="6">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="digit" fx:id="neuf" mnemonicParsing="false" onAction="#neuf" text="9">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="signe" fx:id="mod" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#mod" text="\%">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="306.0" prefWidth="76.0" spacing="25.0">
+               <children>
+                  <Button id="signe" fx:id="add" mnemonicParsing="false" onAction="#add" text="+">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="signe" fx:id="sous" mnemonicParsing="false" onAction="#sous" text="-">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="signe" fx:id="mult" mnemonicParsing="false" onAction="#mult" text="*">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="signe" fx:id="div" mnemonicParsing="false" onAction="#div" text="/">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="255.0" prefWidth="107.0" spacing="25.0">
+               <children>
+                  <Button id="function" fx:id="ac" mnemonicParsing="false" onAction="#ac" prefHeight="36.0" prefWidth="58.0" text="A/C">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button id="function" fx:id="del" mnemonicParsing="false" onAction="#del" prefHeight="42.0" prefWidth="64.0" text="delete">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button id="function" fx:id="moins" mnemonicParsing="false" onAction="#moins" prefHeight="62.0" prefWidth="62.0" text="+ / -">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="function" fx:id="egal" mnemonicParsing="false" onAction="#egal" text="=">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="ans" layoutX="26.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" />
+   </children>
+</AnchorPane>
